@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        "test"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "c:\\Users\\misha\\Desktop\\pppi_test\\CI-CD-PPPI\\test\\lib\\junit-platform-console-standalone-1.13.0-M3.jar"
+    ]
+}
