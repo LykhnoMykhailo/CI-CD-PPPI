@@ -16,6 +16,10 @@ jobs:
     name: Test 
     runs-on: ubuntu-latest 
     
+    # ВИПРАВЛЕННЯ: Встановлюємо NODE_ENV=development, щоб npm ci встановив mocha
+    env:
+      NODE_ENV: development
+      
     steps: 
       - name: Checkout code
         uses: actions/checkout@v4 
@@ -75,6 +79,7 @@ jobs:
             npm-${{ runner.os }}-
       
       - name: Install dependencies
+        # На етапі build нам не потрібні devDependencies, тому env не додаємо
         run: npm ci 
       
       - name: Build project
