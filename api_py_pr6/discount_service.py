@@ -8,4 +8,3 @@ def calculate_discount(original_price: float, discount_percent: float) -> float:
 
     discount_amount = original_price * (discount_percent / max)
     return round(original_price - discount_amount, half)
-calculate_discount(200, 15)
